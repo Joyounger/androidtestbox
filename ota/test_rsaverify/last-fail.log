@@ -1,0 +1,379 @@
+[    0.000911] __bionic_open_tzdata: couldn't find any tzdata when looking for Asia/Shanghai!
+[    0.000970] Starting recovery (pid 358) on Sat Feb  7 02:19:19 1970
+[    0.000978] recovery filesystem table
+[    0.000983] =========================
+[    0.000989]   0 /system ext4 /dev/block/bootdevice/by-name/system 0
+[    0.000996]   1 /cache ext4 /dev/block/bootdevice/by-name/cache 0
+[    0.001004]   2 /data ext4 /dev/block/bootdevice/by-name/userdata -16384
+[    0.001009]   3 /sdcard vfat /dev/block/mmcblk1p1 0
+[    0.001015]   4 /boot emmc /dev/block/bootdevice/by-name/boot 0
+[    0.001020]   5 /recovery emmc /dev/block/bootdevice/by-name/recovery 0
+[    0.001026]   6 /misc emmc /dev/block/bootdevice/by-name/misc 0
+[    0.001031]   7 /tmp ramdisk ramdisk 0
+[    0.001037]
+[    0.058886] I:Boot command: boot-recovery
+[    0.058950] I:Got arguments from boot message
+[    0.067478] locale is [zh_CN]
+[    0.067509] stage is []
+[    0.067515] reason is [(null)]
+[    0.067521] cannot find/open a drm device: No such file or directory
+[    0.069326] fb0 reports (possibly inaccurate):
+[    0.069372]   vi.bits_per_pixel = 32
+[    0.069379]   vi.red.offset   =   0   .length =   8
+[    0.069385]   vi.green.offset =   8   .length =   8
+[    0.069391]   vi.blue.offset  =  16   .length =   8
+[    0.080501] framebuffer: 0 (1080 x 1920)
+[    0.219314]
+[    0.219407] in tree_init load pic resource in main process
+[    0.229281]
+[    0.229293]  finish loadbitmap LanguageMenu_init 
+[    0.251025]
+[    0.251041]  finish loadbitmap SharedBitmap_init 
+[    0.251045]
+[    0.251048]  finish loadbitmap Battery_init 
+[    0.251051]
+[    0.251054]  create load pic reource thread2
+[    0.251181]
+[    0.251187]  create load pic reource thread3
+[    0.251354]
+[    0.251360]  create load pic reource thread4
+[    0.272210]           erasing_text: zh_CN (163 x 57 @ 7250)
+[    0.284665]
+[    0.284705]  finish loadbitmap MainMenu_init 
+[    0.294491]        no_command_text: zh_CN (124 x 57 @ 7250)
+[    0.295726]
+[    0.295760]  finish loadbitmap UpdateMenu_init 
+[    0.302064]
+[    0.302073]  finish loadbitmap WipeMenu_init 
+[    0.310775]             error_text: zh_CN (136 x 57 @ 7250)
+[    0.732527]        installing_text: zh_CN (333 x 57 @ 7446)
+[    0.759571] Command: "recovery" "--update_package=/storage/emulated/0/update.back.zip" "--locale=zh_CN"
+[    0.759585] (replacing path "/storage/emulated/0/update.back.zip" with "/data/media/0/update.back.zip")
+[    0.759592]
+[    0.759788] ro.hwui.texture_cache_size=72
+[    0.760069] qemu.hw.mainkeys=1
+[    0.760214] ro.opengles.version=196609
+[    0.760221] ro.sf.lcd_density=480
+[    0.760276] camera.aux.packagelist=com.android.camera
+[    0.760284] camera.hal1.packagelist=com.skype.raider,com.google.android.talk
+[    0.760290] camera.display.lmax=1280x720
+[    0.760298] camera.display.umax=1920x1080
+[    0.760304] camera.lowpower.record.enable=1
+[    0.760309] persist.camera.stats.test=5
+[    0.760425] persist.qiku.operators.mode=1
+[    0.760454] persist.qiku.log.Job=false
+[    0.760505] persist.qiku.cmcc.mode=0x00
+[    0.760513] persist.qiku.cmcc.brand=0x00
+[    0.760525] persist.qiku.comm.runmode=0000
+[    0.760531] persist.qiku.debug.dexopt=false
+[    0.760539] persist.qiku.oldman.mode=0
+[    0.760545] persist.qiku.ctstest=0
+[    0.760550] persist.qiku.version.bm=0
+[    0.760556] persist.qiku.children.mode=0
+[    0.760562] persist.qiku.perf_opt=0
+[    0.760567] persist.qiku.operators.isabroad=0
+[    0.760573] persist.qiku.defaultmode=0
+[    0.760578] persist.qiku.fingerprint=1
+[    0.760586] persist.ims.init=0
+[    0.760592] vidc.enc.dcvs.extra-buff-count=2
+[    0.760597] vidc.enc.narrow.searchrange=1
+[    0.760605] ro.dalvik.vm.native.bridge=0
+[    0.760611] dalvik.vm.isa.arm.variant=cortex-a53
+[    0.760617] dalvik.vm.isa.arm.features=default
+[    0.760624] dalvik.vm.isa.arm64.variant=generic
+[    0.760630] dalvik.vm.isa.arm64.features=default
+[    0.760636] dalvik.vm.usejit=true
+[    0.760641] dalvik.vm.heapsize=512m
+[    0.760646] dalvik.vm.dex2oat-Xms=64m
+[    0.760652] dalvik.vm.dex2oat-Xmx=512m
+[    0.760657] dalvik.vm.heapmaxfree=8m
+[    0.760684] dalvik.vm.heapminfree=4m
+[    0.760691] dalvik.vm.heapstartsize=16m
+[    0.760698] dalvik.vm.appimageformat=lz4
+[    0.760704] dalvik.vm.usejitprofiles=true
+[    0.760710] dalvik.vm.heapgrowthlimit=512m
+[    0.760715] dalvik.vm.stack-trace-file=/data/anr/traces.txt
+[    0.760721] dalvik.vm.image-dex2oat-Xms=64m
+[    0.760726] dalvik.vm.image-dex2oat-Xmx=64m
+[    0.760732] dalvik.vm.heaptargetutilization=0.75
+[    0.760738] ro.config.zram=false
+[    0.760743] ro.config.low_ram=false
+[    0.760748] ro.config.ringtone=360_Tone.ogg
+[    0.760754] ro.config.ringtone_2=Curiosity.ogg
+[    0.760759] ro.config.alarm_alert=Feeling.ogg
+[    0.760765] ro.config.agenda_alert=Schedule.ogg
+[    0.760770] ro.config.notification_sound=Notification.ogg
+[    0.760778] ro.build.fingerprint=360/QK1607/QK1607:7.1.1/NMF26F/7.0.067.PX.170531.360_360_QK1607_CN:user/release-keys
+[    0.760784] af.fast_track_multiplier=1
+[    0.760790] av.debug.disable.pers.cache=true
+[    0.760795] mm.enable.qcom_parser=1048575
+[    0.760801] mm.enable.smoothstreaming=true
+[    0.760806] pm.dexopt.boot=verify-profile
+[    0.760812] pm.dexopt.ab-ota=speed-profile
+[    0.760817] pm.dexopt.install=interpret-only
+[    0.760823] pm.dexopt.core-app=speed
+[    0.760828] pm.dexopt.bg-dexopt=speed-profile
+[    0.760834] pm.dexopt.first-boot=interpret-only
+[    0.760839] pm.dexopt.shared-apk=speed
+[    0.760845] pm.dexopt.nsys-library=speed
+[    0.760850] pm.dexopt.forced-dexopt=speed
+[    0.760856] ro.fm.transmitter=false
+[    0.760864] ro.qc.sdk.audio.ssr=false
+[    0.760870] ro.qc.sdk.audio.fluencetype=fluence
+[    0.760876] ro.adb.secure=1
+[    0.760881] ro.com.android.dateformat=MM-dd-yyyy
+[    0.760887] ro.com.android.dataroaming=true
+[    0.760892] ro.frp.pst=/dev/block/bootdevice/by-name/config
+[    0.760898] ro.sys.fw.empty_app_percent=50
+[    0.760903] ro.sys.fw.use_trim_settings=true
+[    0.760909] ro.sys.fw.trim_cache_percent=100
+[    0.760914] ro.sys.fw.trim_empty_percent=100
+[    0.760919] ro.sys.fw.trim_enable_memory=2147483648
+[    0.760925] ro.sys.fw.dex2oat_thread_count=4
+[    0.760930] ro.boot.emmc=true
+[    0.760936] ro.boot.console=ttyHSL0
+[    0.760941] ro.boot.version.btloader=20170531-184245
+[    0.760947] ro.boot.baseband=msm
+[    0.760953] ro.boot.hardware=qcom
+[    0.760958] ro.boot.sbc_flag=true
+[    0.760963] ro.boot.serialno=3faef484
+[    0.760969] ro.boot.keymaster=1
+[    0.760974] ro.boot.bootdevice=7824900.sdhci
+[    0.760980] ro.boot.veritymode=enforcing
+[    0.760985] ro.boot.authorized_kernel=true
+[    0.760991] ro.boot.verifiedbootstate=green
+[    0.760996] ro.hwui.path_cache_size=32
+[    0.761002] ro.hwui.layer_cache_size=48
+[    0.761007] ro.hwui.gradient_cache_size=1
+[    0.761012] ro.hwui.r_buffer_cache_size=8
+[    0.761020] ro.hwui.drop_shadow_cache_size=6
+[    0.761025] ro.hwui.text_large_cache_width=2048
+[    0.761031] ro.hwui.text_small_cache_width=1024
+[    0.761036] ro.hwui.text_large_cache_height=2048
+[    0.761042] ro.hwui.text_small_cache_height=1024
+[    0.761047] ro.hwui.texture_cache_flushrate=0.4
+[    0.761053] ro.mdtp.package_name1=com.cloudsx.android.coreservice
+[    0.761058] ro.mdtp.package_name2=com.qualcomm.qti.securemsm.mdtp.MdtpDemo
+[    0.761064] ro.qiku.bt.voicerecord=0
+[    0.761069] ro.qiku.gms=0
+[    0.761075] ro.qiku.boot.reason=recovery
+[    0.761080] ro.qiku.call.record.audiosource=4
+[    0.761090] ro.qiku.sales.channel=2
+[    0.761096] ro.qiku.oldman.phone=0
+[    0.761101] ro.qiku.display.360logo=1
+[    0.761107] ro.qiku.hotknot=0
+[    0.761112] ro.qiku.product.cpu=高通骁龙 653
+[    0.761120] ro.qiku.product.ifaa.model=qiku-1607
+[    0.761125] ro.qiku.product.type=FE
+[    0.761131] ro.qiku.product.series=N
+[    0.761136] ro.qiku.product.cmiitid=2017CP2206
+[    0.761142] ro.qiku.product.devicename=N5S
+[    0.761147] ro.qiku.product.sms_dev_code=647
+[    0.761154] ro.qiku.version.tag=LC
+[    0.761160] ro.qiku.version.date=170531
+[    0.761166] ro.qiku.version.audio.sim1=QK1607_SIM1_20170523
+[    0.761171] ro.qiku.version.audio.sim2=QK1607_SIM2_20170523
+[    0.761181] ro.qiku.version.kernel=3.18.0.PX.170531.NMF26F
+[    0.761187] ro.qiku.version.release=7.0.067.PX.170531.360_360_QK1607_CN
+[    0.761193] ro.qiku.version.audiogsm=QK1607_QC8976PRO_20170513
+[    0.761198] ro.qiku.version.audiolte=QK1607_QC8976PRO_20170513
+[    0.761204] ro.qiku.version.hardware=P1
+[    0.761209] ro.qiku.version.software=7.0.067.PX.170531.360_360_QK1607_CN
+[    0.761215] ro.qiku.version.audiocdma=QK1607_QC8976PRO_20170513
+[    0.761221] ro.qiku.version.audiowcdma=QK1607_QC8976PRO_20170513
+[    0.761226] ro.qiku.version.audiotdscdma=QK1607_QC8976PRO_20170513
+[    0.761232] ro.qiku.privacyspace.support=1
+[    0.761238] ro.qiku.externaldisplay=N5S
+[    0.761243] ro.wifi.channels=
+[    0.761249] ro.allow.mock.location=0
+[    0.761254] ro.board.platform=msm8952
+[    0.761259] ro.build.id=NMF26F
+[    0.761265] ro.build.ota.type=stable
+[    0.761270] ro.build.date=Wed May 31 18:41:34 CST 2017
+[    0.761276] ro.build.date.utc=1496227294
+[    0.761282] ro.build.host=ubuntu
+[    0.761287] ro.build.tags=release-keys
+[    0.761293] ro.build.type=user
+[    0.761300] ro.build.user=system1
+[    0.761305] ro.build.flavor=QK1607-user
+[    0.761311] ro.build.display.id=V067
+[    0.761317] ro.build.product=QK1607
+[    0.761322] ro.build.version.sdk=25
+[    0.761328] ro.build.version.base_os=
+[    0.761333] ro.build.version.release=7.1.1
+[    0.761339] ro.build.version.codename=REL
+[    0.761344] ro.build.version.incremental=067
+[    0.761350] ro.build.version.preview_sdk=0
+[    0.761356] ro.build.version.all_codenames=REL
+[    0.761361] ro.build.version.security_patch=2017-06-01
+[    0.761366] ro.build.uiversion=360UI:V2.0
+[    0.761372] ro.build.description=7.0.067.PX.170531.360_360_QK1607_CN
+[    0.761377] ro.build.characteristics=nosdcard
+[    0.761383] ro.secure=1
+[    0.761388] ro.vendor.name=QIKU
+[    0.761394] ro.vendor.channel.number=360_360_QK1607_CN
+[    0.761399] ro.vendor.at_library=libqti-at.so
+[    0.761405] ro.vendor.gt_library=libqti-gt.so
+[    0.761411] ro.vendor.extension_library=libqti-perfd-client.so
+[    0.761416] ro.zygote=zygote64_32
+[    0.761422] ro.carrier=unknown
+[    0.761427] ro.product.cpu.abi=arm64-v8a
+[    0.761432] ro.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    0.761440] ro.product.cpu.abilist32=armeabi-v7a,armeabi
+[    0.761445] ro.product.cpu.abilist64=arm64-v8a
+[    0.761451] ro.product.name=QK1607
+[    0.761456] ro.product.name.derivative=1607-A01
+[    0.761462] ro.product.board=msm8952
+[    0.761467] ro.product.brand=360
+[    0.761473] ro.product.model=1607-A01
+[    0.761478] ro.product.device=QK1607
+[    0.761484] ro.product.locale=zh-CN
+[    0.761489] ro.product.manufacturer=360
+[    0.761495] ro.baseband=msm
+[    0.761500] ro.bootmode=unknown
+[    0.761506] ro.hardware=qcom
+[    0.761511] ro.qualcomm.cabl=2
+[    0.761517] ro.revision=0
+[    0.761522] ro.serialno=3faef484
+[    0.761528] ro.bootimage.build.date=Wed May 31 18:41:34 CST 2017
+[    0.761533] ro.bootimage.build.date.utc=1496227294
+[    0.761539] ro.bootimage.build.fingerprint=360/QK1607/QK1607:7.1.1/NMF26F/7.0.067.PX.170531.360_360_QK1607_CN:user/release-keys
+[    0.761545] ro.telephony.default_network=22,20
+[    0.761550] ro.bootloader=unknown
+[    0.761556] ro.debuggable=0
+[    0.761561] ro.core_ctl_max_cpu=4
+[    0.761567] ro.core_ctl_min_cpu=2
+[    0.761572] ro.use_data_netmgrd=true
+[    0.761578] ro.cutoff_voltage_mv=3200
+[    0.761583] mmp.enable.3g2=true
+[    0.761589] use.qti.sw.ape.decoder=true
+[    0.761594] use.qti.sw.alac.decoder=true
+[    0.761600] use.voice.path.for.pcm.voip=true
+[    0.761605] init.svc.healthd=running
+[    0.761611] init.svc.ueventd=running
+[    0.761616] init.svc.recovery=running
+[    0.761622] qcom.hw.aac.encoder=true
+[    0.761627] rild.libargs=-d /dev/smd0
+[    0.761633] rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+[    0.761638] audio.pp.asphere.enabled=false
+[    0.761644] audio.safx.pbe.enabled=true
+[    0.761649] audio.dolby.ds2.enabled=true
+[    0.761655] audio.parser.ip.buffer.size=262144
+[    0.761660] audio.offload.min.duration.secs=30
+[    0.761666] audio.offload.pcm.16bit.enable=true
+[    0.761674] audio.offload.pcm.24bit.enable=false
+[    0.761680] audio.offload.track.enable=false
+[    0.761686] audio.offload.video=true
+[    0.761692] audio.offload.buffer.size.kb=64
+[    0.761697] audio.offload.gapless.enabled=true
+[    0.761703] audio.offload.multiple.enabled=false
+[    0.761708] audio.playback.mch.downsample=true
+[    0.761714] audio.deep_buffer.media=true
+[    0.761722] media.camera.ts.monotonic=1
+[    0.761728] media.aac_51_output_enabled=true
+[    0.761733] sched.colocate.enable=1
+[    0.761739] voice.conc.fallbackpath=deep-buffer
+[    0.761745] voice.voip.conc.disabled=false
+[    0.761750] voice.record.conc.disabled=false
+[    0.761756] voice.playback.conc.disabled=true
+[    0.761761] tunnel.audio.encode=false
+[    0.761767] persist.cne.feature=1
+[    0.761772] persist.cne.subscription_aware=0
+[    0.761778] persist.hwc.mdpcomp.enable=true
+[    0.761783] persist.hwc.enable_vds=1
+[    0.761789] persist.hwc.downscale_threshold=1.15
+[    0.761794] persist.nfc.smartcard.config=SIM1,eSE1
+[    0.761800] persist.qfp=false
+[    0.761805] persist.data.qmi.adb_logmask=0
+[    0.761811] persist.data.mode=concurrent
+[    0.761816] persist.data.netmgrd.qos.enable=true
+[    0.761822] persist.demo.hdmirotationlock=false
+[    0.761827] persist.rild.nitz_plmn=
+[    0.761833] persist.rild.nitz_long_ons_0=
+[    0.761838] persist.rild.nitz_long_ons_1=
+[    0.761844] persist.rild.nitz_long_ons_2=
+[    0.761849] persist.rild.nitz_long_ons_3=
+[    0.761854] persist.rild.nitz_short_ons_0=
+[    0.761860] persist.rild.nitz_short_ons_1=
+[    0.761865] persist.rild.nitz_short_ons_2=
+[    0.761871] persist.rild.nitz_short_ons_3=
+[    0.761876] persist.timed.enable=true
+[    0.761881] persist.fuse_sdcard=true
+[    0.761887] keyguard.no_require_sim=true
+[    0.761892] audio_hal.period_size=192
+[    0.761898] telephony.lteOnCdmaDevice=1
+[    0.761903] DEVICE_PROVISIONED=1
+[    0.761908] persist.logd.size=4194304
+[    0.761914] persist.debug.wfd.enable=1
+[    0.761919] persist.debug.8976.config=true
+[    0.761925] persist.debug.coresight.config=stm-events
+[    0.761930] persist.audio.fluence.speaker=false
+[    0.761936] persist.audio.fluence.voicerec=false
+[    0.761941] persist.audio.fluence.voicecall=true
+[    0.761947] ro.qiku.fingerprint.module=goodix
+[    0.761952] security.perf_harden=1
+[    0.761958] persist.log.tag.LocationMS=D
+[    0.761963] persist.log.tag.GnssProvider=V
+[    0.761969] debug.sf.hw=0
+[    0.761974] debug.egl.hw=0
+[    0.761979] debug.atrace.tags.enableflags=0
+[    0.761985] debug.enable.sglscale=1
+[    0.761991] debug.mdpcomp.logs=0
+[    0.761996] bluetooth.hfp.client=1
+[    0.762002] dev.pm.dyn_samplingrate=1
+[    0.762007] net.bt.name=Android
+[    0.762012] net.change=net.bt.name
+[    0.762018] persist.sys.dm=0
+[    0.762024] persist.sys.st.value=0
+[    0.762029] persist.sys.usb.config=mtp
+[    0.762034] persist.sys.dalvik.vm.lib.2=libart.so
+[    0.762040] persist.sys.bootaud.on=true
+[    0.762045] persist.sys.bootaud.volume=7
+[    0.762051] persist.sys.country=CN
+[    0.762056] persist.sys.language=zh
+[    0.762062] persist.sys.timezone=Asia/Shanghai
+[    0.762067] ril.subscription.types=NV,RUIM
+[    0.762072] qiku.radio.is_united_cpb=1
+[    0.762078] persist.radio.csvt.enabled=false
+[    0.762083] persist.radio.calls.on.ims=0
+[    0.762089] persist.radio.jbims=0
+[    0.762094] persist.radio.rat_on=combine
+[    0.762100] persist.radio.multisim.config=dsds
+[    0.762105] persist.radio.adb_log_on=1
+[    0.762111] persist.radio.custom_ecc=1
+[    0.762116] persist.radio.lw_enabled=true
+[    0.762122] persist.radio.mt_sms_ack=20
+[    0.762127] persist.radio.sib16_support=1
+[    0.762135] persist.radio.VT_CAM_INTERFACE=1
+[    0.762140] persist.radio.apm_sim_not_pwdn=1
+[    0.762146] persist.radio.data_ltd_sys_ind=1
+[    0.762151]
+[    0.762156] Supported API: 3
+[    0.776275] charge_status 2, charged 1, status 0, capacity 78
+[    0.792316] E:[sp]old path: /data/media/0/update.back.zip
+[    0.808971] E:[sp]new path: /data/media/0/update.back.zip
+[    0.842314] Finding update package...
+[    0.892446] I:Update location: /data/media/0/update.back.zip
+[    0.892471] Opening update package...
+[    0.941294] I:read key e=3 hash=20
+[    0.941354] I:1 key(s) loaded from /res/keys
+[    0.941381] Verifying update package...
+[    0.960698] I:comment is 1520 bytes; signature 1502 bytes from end
+[    2.525893] I:signature (offset: 0x5e122e1, length: 1496): 308205d406092a864886f70d010702a08205c5308205c1020101310b300906052b0e03021a0500300b06092a864886f70d010701a08203e1308203dd308202c5a003020102020900d8a6f83166e2199e300d06092a864886f70d0101050500308185310b300906035504061302434e3112301006035504080c094775616e67446f6e673111300f06035504070c085368656e5a68656e310d300b060355040a0c0451696b75310d300b060355040b0c0451696b753110300e06035504030c07746573746b6579311f301d06092a864886f70d0109011610616e64726f69644071696b752e636f6d301e170d3136303132373032353931325a170d3433303631343032353931325a308185310b300906035504061302434e3112301006035504080c094775616e67446f6e673111300f06035504070c085368656e5a68656e310d300b060355040a0c0451696b75310d300b060355040b0c0451696b753110300e06035504030c07746573746b6579311f301d06092a864886f70d0109011610616e64726f69644071696b752e636f6d30820120300d06092a864886f70d01010105000382010d00308201080282010100d50c64fa7b321aabd17a39734d1c0b6762f46d942a6ceaa25fd20f128427eb7026b9eb8b7564f70bd4b0b718b37813159551695201121de019412362a7f63f65fc0153c2f454a84ce6be687f513f0964a084616341818fe60aaa34b804ade09ea2a3a58b4b0738e494a4dd30d9a9a21ef3b07be05e987b0be9d5dacbbf85f1eaf45d00e0cb497f18688d94ea6973ab76103420f795d68eb7a3607cdcfe3ba8c6ac769e6261755872e745bf18748fbe8058254951b2f52442c1a9d364e42ac236afb20671a994c8b310ddde61611e5a35551e2cf2a663f4490cf57ff68ba734ae026b98020b06fee96f935bf68bb4080ae50ca363f67aa82277bd9ec2021b83e1020103a350304e301d0603551d0e0416041469f6fe6c40297f4bc1bef9945c4dbf785d667fa8301f0603551d2304183016801469f6fe6c40297f4bc1bef9945c4dbf785d667fa8300c0603551d13040530030101ff300d06092a864886f70d010105050003820101001cf7e08c72b6f6fadb10d97600d0dc1939f8a6549eb85df2b992939bea3b9ba24a27e5245df300f4f97a55ae1d219bfd668ea990d4751b4141e3d48423bf9be54dcf31ef8e45fffa7fa9c12ce87d932ae1e878c33fe2386612aceb660f4168d9d0b47a7c91eb7415c3cccecb4aeaa1524125c3620a193c6b31fdbca3acd5f5c481babbccab41142653a5ed438e486faee25e820b15cef3afa8f3f9e546e62ddaa8b1ae52580917388f94cc5c5f5f90582750c0ebed2c7a94c0f1cf28e4b908f3e4e41ad233c2df920c92d739617d71d2d9c6c5dea339f98d63c46180ad6bd2fcad0ebad3bfcb890c8155dc567211f5dd2b21a4dbe0e996efc403d29bc50e8cbb318201bb308201b7020101308193308185310b300906035504061302434e3112301006035504080c094775616e67446f6e673111300f06035504070c085368656e5a68656e310d300b060355040a0c0451696b75310d300b060355040b0c0451696b753110300e06035504030c07746573746b6579311f301d06092a864886f70d0109011610616e64726f69644071696b752e636f6d020900d8a6f83166e2199e300906052b0e03021a0500300d06092a864886f70d010101050004820100197dc8d2d1c66d79a81b1c2cc1c741b45c10d42af5a7aac4ae2fe9908690e4a66820089e632f620278ca6a1efa3908a84df7707743bac11671c69cb0f20484295da572368da615761e8aa5c7a0cc7c714a86770c2aceab2f421c3b3f5fc77014febc2f37d7c207f4dcb156fd17dd9d0621394c6469cdf328d9742783dbdc5e5e52b8ad91c40f85721534b5f48b96e6410bc3617ebea73c552c31ca2d7377e6914eb8f1a128f17a131e198adb7dce89736f810f8add7326da057fc6b66f869b1cc0f3b24c65c0dff67e8387f2c8672610598744a69c1c85896534a624827e58ca52d7e305458c7da4374279029c1d950d6d331f5ec65f3e591f16269206c7d931
+[    2.526147] I:failed to verify against RSA key 0
+[    2.526176] I:SHA-1 digest: 06ef60613c6c7ceb49e9563e25b9e6b485571e09
+[    2.526207] E:failed to verify whole-file signature
+[    2.542369] Update package verification took 1.6 s (result 1).
+[    2.575656] E:Signature verification failed
+[    2.592343] E:error: 21
+[    2.632744] W:failed to read uncrypt status: No such file or directory
+[    2.633003] I:/data/media/0/update.back.zip
+[    2.633017] 0
+[    2.633025] time_total: 1
+[    2.633033] retry: 0
+[    2.633041] error: 21
+[    2.633079] Installation aborted.
+[    2.709001]  menuunit->MENU_NUM= 1 , menuunit->lang=0 
+[   13.100658] I:calibrate_touch: fd=237, (0,0)-(1079,1919) pos (0,0)
+[   13.100689] I:setup_vkeys: could not open /sys/board_properties/virtualkeys.goodix-ts
+[  196.842547] I:Saving locale "zh_CN"
