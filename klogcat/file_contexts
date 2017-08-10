@@ -1,0 +1,3 @@
+# add klogcat tool to record kernel log BEGIN	15
+/system/bin/klogcat      --      u:object_r:logcat_exec:s0	16
+# add klogcat tool to record kernel log END
