@@ -1,0 +1,35 @@
+libcoregrind_arm64_linux_a-m_libcsetjmp.o: m_libcsetjmp.c \
+ pub_core_basics.h ../include/pub_tool_basics.h \
+ ../VEX/pub/libvex_basictypes.h \
+ d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include\stdarg.h \
+ pub_core_libcsetjmp.h ../include/pub_tool_libcsetjmp.h \
+ ../include/pub_tool_basics.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/setjmp.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs_elf.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/android/api-level.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/machine/setjmp.h
+
+pub_core_basics.h:
+
+../include/pub_tool_basics.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include\stdarg.h:
+
+pub_core_libcsetjmp.h:
+
+../include/pub_tool_libcsetjmp.h:
+
+../include/pub_tool_basics.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/setjmp.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs_elf.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/android/api-level.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/machine/setjmp.h:

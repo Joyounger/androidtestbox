@@ -1,0 +1,39 @@
+m_debuginfo/libcoregrind_arm64_linux_a-minilzo-inl.o: \
+ m_debuginfo/minilzo-inl.c \
+ d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include-fixed\limits.h \
+ d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include-fixed\syslimits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs_elf.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/android/api-level.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/syslimits.h \
+ d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include\stddef.h \
+ m_debuginfo/minilzo.h m_debuginfo/lzoconf.h m_debuginfo/lzodefs.h
+
+d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include-fixed\limits.h:
+
+d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include-fixed\syslimits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs_elf.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/android/api-level.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/syslimits.h:
+
+d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include\stddef.h:
+
+m_debuginfo/minilzo.h:
+
+m_debuginfo/lzoconf.h:
+
+m_debuginfo/lzodefs.h:

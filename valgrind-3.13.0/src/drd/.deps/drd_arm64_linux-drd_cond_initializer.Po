@@ -1,0 +1,188 @@
+drd_arm64_linux-drd_cond_initializer.o: drd_cond_initializer.c drd_cond.h \
+ drd_thread.h drd_basics.h ../include/pub_tool_basics.h \
+ ../VEX/pub/libvex_basictypes.h \
+ d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include\stdarg.h \
+ drd_segment.h drd_vc.h ../include/pub_tool_libcassert.h \
+ ../include/pub_tool_basics.h pub_drd_bitmap.h ../include/pub_tool_oset.h \
+ ../include/pub_tool_execontext.h ../include/pub_tool_stacktrace.h \
+ ../include/pub_tool_threadstate.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/pthread.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/time.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs_elf.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/android/api-level.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/time.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/types.h \
+ d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include\stddef.h \
+ d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include\stdint.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/stdint.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/machine/wchar_limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/int-ll64.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/bitsperlong.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/bitsperlong.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/posix_types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/stddef.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/compiler.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/posix_types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/posix_types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/sysmacros.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/time.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/xlocale.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/signal.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/errno.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/errno.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/errno.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/errno.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/errno-base.h \
+ d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include-fixed\limits.h \
+ d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include-fixed\syslimits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/syslimits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/string.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/malloc.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/sigcontext.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/signal.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/signal.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/signal.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/signal-defs.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/siginfo.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/siginfo.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/ucontext.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/user.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sched.h \
+ D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/sched.h
+
+drd_cond.h:
+
+drd_thread.h:
+
+drd_basics.h:
+
+../include/pub_tool_basics.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include\stdarg.h:
+
+drd_segment.h:
+
+drd_vc.h:
+
+../include/pub_tool_libcassert.h:
+
+../include/pub_tool_basics.h:
+
+pub_drd_bitmap.h:
+
+../include/pub_tool_oset.h:
+
+../include/pub_tool_execontext.h:
+
+../include/pub_tool_stacktrace.h:
+
+../include/pub_tool_threadstate.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/pthread.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/time.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/cdefs_elf.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/android/api-level.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/time.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/types.h:
+
+d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include\stddef.h:
+
+d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include\stdint.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/stdint.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/machine/wchar_limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/int-ll64.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/bitsperlong.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/bitsperlong.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/posix_types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/stddef.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/compiler.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/posix_types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/posix_types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/sysmacros.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/time.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/xlocale.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/signal.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/errno.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/errno.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/errno.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/errno.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/errno-base.h:
+
+d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include-fixed\limits.h:
+
+d:\android-sdk\ndk-bundle\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\lib\gcc\aarch64-linux-android\4.9.x\include-fixed\syslimits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/syslimits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/string.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/malloc.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/sigcontext.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/signal.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/signal.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/signal.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/signal-defs.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm/siginfo.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/asm-generic/siginfo.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/ucontext.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sys/user.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/sched.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include/linux/sched.h:

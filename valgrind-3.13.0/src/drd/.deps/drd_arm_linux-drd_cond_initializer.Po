@@ -1,0 +1,164 @@
+drd_arm_linux-drd_cond_initializer.o: drd_cond_initializer.c drd_cond.h \
+ drd_thread.h drd_basics.h ../include/pub_tool_basics.h \
+ ../VEX/pub/libvex_basictypes.h \
+ d:\android-sdk\ndk-bundle\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\4.9.x\include\stdarg.h \
+ drd_segment.h drd_vc.h ../include/pub_tool_libcassert.h \
+ ../include/pub_tool_basics.h pub_drd_bitmap.h ../include/pub_tool_oset.h \
+ ../include/pub_tool_execontext.h ../include/pub_tool_stacktrace.h \
+ ../include/pub_tool_threadstate.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/pthread.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/time.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/android/api-level.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/time.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/types.h \
+ d:\android-sdk\ndk-bundle\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\4.9.x\include\stddef.h \
+ d:\android-sdk\ndk-bundle\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\4.9.x\include\stdint.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/stdint.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/_types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/machine/_types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/_wchar_limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/posix_types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/stddef.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/compiler.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/posix_types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/machine/kernel.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/sysmacros.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/time.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/siginfo.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm-generic/siginfo.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/signal.h \
+ d:\android-sdk\ndk-bundle\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\4.9.x\include-fixed\limits.h \
+ d:\android-sdk\ndk-bundle\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\4.9.x\include-fixed\syslimits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/machine/internal_types.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/machine/limits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/syslimits.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/page.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/string.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/malloc.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/signal.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm-generic/signal.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/sigcontext.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/ucontext.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/user.h \
+ D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sched.h
+
+drd_cond.h:
+
+drd_thread.h:
+
+drd_basics.h:
+
+../include/pub_tool_basics.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+d:\android-sdk\ndk-bundle\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\4.9.x\include\stdarg.h:
+
+drd_segment.h:
+
+drd_vc.h:
+
+../include/pub_tool_libcassert.h:
+
+../include/pub_tool_basics.h:
+
+pub_drd_bitmap.h:
+
+../include/pub_tool_oset.h:
+
+../include/pub_tool_execontext.h:
+
+../include/pub_tool_stacktrace.h:
+
+../include/pub_tool_threadstate.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/pthread.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/time.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/cdefs.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/android/api-level.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/time.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/types.h:
+
+d:\android-sdk\ndk-bundle\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\4.9.x\include\stddef.h:
+
+d:\android-sdk\ndk-bundle\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\4.9.x\include\stdint.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/stdint.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/_types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/machine/_types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/_wchar_limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/posix_types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/stddef.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/compiler.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/posix_types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/machine/kernel.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/sysmacros.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/time.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/siginfo.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm-generic/siginfo.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/signal.h:
+
+d:\android-sdk\ndk-bundle\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\4.9.x\include-fixed\limits.h:
+
+d:\android-sdk\ndk-bundle\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\lib\gcc\arm-linux-androideabi\4.9.x\include-fixed\syslimits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/linux/limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/machine/internal_types.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/machine/limits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/syslimits.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/page.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/string.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/malloc.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/signal.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm-generic/signal.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/asm/sigcontext.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/ucontext.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sys/user.h:
+
+D:/android-sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include/sched.h:

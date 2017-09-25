@@ -1,0 +1,81 @@
+
+win764位 + cygwin下编译 valgrind
+
+arm 32位:
+1 export NDKROOT=/path/to/android-ndk-r<version>
+export NDKROOT=D:/android-sdk/ndk-bundle
+
+2
+export AR=$NDKROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-ar
+export LD=$NDKROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-ld
+export CC=$NDKROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-gcc
+
+
+3
+./autogen.sh
+
+4
+CPPFLAGS="--sysroot=$NDKROOT/platforms/android-14/arch-arm" \
+   CFLAGS="--sysroot=$NDKROOT/platforms/android-14/arch-arm" \
+   ./configure --prefix=/data/local/Inst \
+   --host=armv7-unknown-linux --target=armv7-unknown-linux \
+   --with-tmpdir=/sdcard
+   
+   
+result:
+         Maximum build arch: arm
+         Primary build arch: arm
+       Secondary build arch:
+                   Build OS: linux
+       Primary build target: ARM_LINUX
+     Secondary build target:
+           Platform variant: android
+      Primary -DVGPV string: -DVGPV_arm_linux_android=1
+         Default supp files: exp-sgcheck.supp xfree-3.supp xfree-4.supp bionic.supp
+         
+5
+make -j4
+
+6
+make -j4 install DESTDIR=`pwd`/Inst
+
+
+arm 64位:
+1 export NDKROOT=/path/to/android-ndk-r<version>
+export NDKROOT=D:/android-sdk/ndk-bundle
+
+2
+# For ARM64 (AArch64)
+export AR=$NDKROOT/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64/bin/aarch64-linux-android-ar 
+export LD=$NDKROOT/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64/bin/aarch64-linux-android-ld
+export CC=$NDKROOT/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64/bin/aarch64-linux-android-gcc
+
+
+3
+./autogen.sh
+
+4
+# for ARM64 (AArch64)
+CPPFLAGS="--sysroot=$NDKROOT/platforms/android-21/arch-arm64" \
+   CFLAGS="--sysroot=$NDKROOT/platforms/android-21/arch-arm64" \
+   ./configure --prefix=/data/local/Inst \
+   --host=aarch64-unknown-linux --target=aarch64-unknown-linux \
+   --with-tmpdir=/sdcard
+   
+   
+result:
+         Maximum build arch: arm64
+         Primary build arch: arm64
+       Secondary build arch:
+                   Build OS: linux
+       Primary build target: ARM64_LINUX
+     Secondary build target:
+           Platform variant: android
+      Primary -DVGPV string: -DVGPV_arm64_linux_android=1
+         Default supp files: exp-sgcheck.supp xfree-3.supp xfree-4.supp bionic.supp
+         
+5
+make -j4
+
+6
+make -j4 install DESTDIR=`pwd`/Inst
