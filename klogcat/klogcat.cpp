@@ -1,6 +1,7 @@
 /*
+
 usage: /system/bin/klogcat [-f log_path],
--f参数可选,后面指定自定义的日志路径,如果未指定-f,log_path取默认值/data/misc/logd/kmsg.log
+-f参数可选,后面指定自定义的日志路径,如果未指定-f,默认将log输出到标准输出
 eg:  /system/bin/klogcat -f /data/property/kmsg.log
 
 注意:如果要在自定义路径多次执行klogcat保存多份log, log文件名直接用kmsg.log即可,不需要手动修改文件名,否则会修改之前保存的log.
@@ -23,24 +24,28 @@ eg:  /system/bin/klogcat -f /data/property/kmsg.log
 #include <cutils/log.h>
 #include <cutils/properties.h>
 
-
-static const int LOG_NUM = 10;                                  // the max number of log files we want to store.
+static const int LOG_NUM = 10;                          // the max number of log files we want to store.
+static const unsigned long long LOG_SIZE = 83886080;    // the max size of log file we want to store, now is 80MB
+const char* log_path;                                   // log_path is meaningful when -f optiob is set
 
 void rotate_logs(int max, const char *log_path);
-int read_dev_kmsg(const char *log_path);
+int read_dev_kmsg(int fd_out);
 
 int main(int argc __unused, char **argv __unused)
 {
-    int retval;
+    umask(S_IWGRP | S_IWOTH); // pre_umask is 077, set umask is 022, for group and other user to read.
 
-    const char* optstr = ":f:";
+    int retval;
     int opt;
-    const char* log_path = "/data/misc/logd/kmsg.log";         // the default path fot kmsg
+    bool f_flag = false;
+    const char* optstr = ":f:";
 
     while ((opt = getopt(argc, argv, optstr)) != -1) {
         switch (opt) {
             case 'f':
                 log_path = optarg;
+                ALOGD("log_path--%s", log_path);
+                f_flag = true;
                 break;
             case ':':
                 ALOGE("klogcat: option need a value");
@@ -52,28 +57,25 @@ int main(int argc __unused, char **argv __unused)
         }
     }
 
-    ALOGD("log_path--%s", log_path);
-
-    // pre_umask is 077, set umask is 022, for group and other user to read.
-    umask(S_IWGRP | S_IWOTH);
-
-    rotate_logs(LOG_NUM, log_path);
-    retval = read_dev_kmsg(log_path);
+    if (f_flag) {
+        rotate_logs(LOG_NUM, log_path);
+        int flog = open(log_path, O_WRONLY | O_CREAT | O_APPEND, 0666);
+        if (flog == -1) {
+            ALOGE("open %s failed: %s", log_path, strerror(errno));
+        }
+        retval = read_dev_kmsg(flog);
+        close(flog);
+    } else {
+        retval = read_dev_kmsg(STDIN_FILENO);
+    }
 
     exit(retval);
 }
 
 // Rename last_kmsg -> last_kmsg.1 -> ... -> last_kmsg.$max.
-// Overwrite any existing last_log.$max and last_kmsg.$max.
+// Overwrite any existing last_kmsg.$max.
 void rotate_logs(int max, const char *log_path)
 {
-    // Logs should only be rotated once.
-    static bool rotated = false;
-    if (rotated) {
-        return;
-    }
-    rotated = true;
-
     for (int i = max-1; i >= 0; --i) {
         std::string old_kmsg = android::base::StringPrintf("%s", log_path);
         if (i > 0) {
@@ -82,18 +84,26 @@ void rotate_logs(int max, const char *log_path)
         std::string new_kmsg = android::base::StringPrintf("%s.%d", log_path, i+1);
         if (rename(old_kmsg.c_str(), new_kmsg.c_str()) != 0) {
             ALOGE("rename %s failed: %s", old_kmsg.c_str(), strerror(errno));
+            if (errno == EACCES) {
+                // Permission denied, let klogcat exit with status 4.
+                ALOGE("klogcat has no permission, just exit with status 4");
+                exit(4);
+            }
         }
     }
 }
 
-int read_dev_kmsg(const char *log_path)
+int read_dev_kmsg(int fd_out)
 {
-    int retval = 0;
-    int flog = open(log_path, O_WRONLY | O_CREAT | O_APPEND, 0666);
+    unsigned long long bytesWritten = 0;
 
     // Each read returns one message. We block when there are no
     // more messages (--follow);
     int fd = open("/dev/kmsg", O_RDONLY);
+    if (fd == -1) {
+        ALOGE("open /dev/kmsg failed: %s", strerror(errno));
+    }
+    int retval = 0;
 
     while (1) {
         char msg[8192]; // CONSOLE_EXT_LOG_MAX.
@@ -136,19 +146,25 @@ int read_dev_kmsg(const char *log_path)
         p = strstr(text, ": ");
         subsystem = p ? (p - text) : 0;
 
-        // print the syslog facility/priority at the start of each line.
-        dprintf(flog, "<%d>", facpri);
-        // print timestamps
-        dprintf(flog, "[%5lld.%06lld] ", time_us/1000000, time_us%1000000);
+        // print the syslog facility/priority at the start of each line, timestamps
+        bytesWritten += dprintf(fd_out, "<%d>[%5lld.%06lld] ", facpri, time_us/1000000, time_us%1000000);
 
         if (subsystem) {
-            dprintf(flog, "%.*s", subsystem, text);
+            bytesWritten += dprintf(fd_out, "%.*s", subsystem, text);
             text += subsystem;
         }
-        dprintf(flog, "%s\n", text);
+        bytesWritten += dprintf(fd_out, "%s\n", text);
+        if (fd_out != STDIN_FILENO) {
+            if (bytesWritten >= LOG_SIZE) {
+                fdatasync(fd_out);
+                bytesWritten = 0;
+                close(fd_out);
+                rotate_logs(LOG_NUM, log_path);
+                fd_out = open(log_path, O_WRONLY | O_CREAT | O_APPEND, 0666);
+            }
+        }
     }
 
     close(fd);
-    close(flog);
     return retval;
 }
