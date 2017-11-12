@@ -1,0 +1,18 @@
+
+
+1 下载bzip2源码，解压后直接执行make
+
+2 sudo cp -f libbz2.a /usr/local/lib
+sudo chmod a+r /usr/local/lib/libbz2.a
+
+3 在bsdiff源码下
+sudo gcc bsdiff.c -lbz2 -o /usr/local/bin/bsdiff
+sudo gcc bspatch.c -lbz2 -o /usr/local/bin/bsatch
+
+
+
+
+./bsdiff old.file new.file add.patch
+old.file是旧的文件，new.file是新更改变化的文件，add.patch是这两个文件生成的差异文件.
+./bspatch old.file createNew.file add.patch 
+其中createNew.file是合并后生成的新文件

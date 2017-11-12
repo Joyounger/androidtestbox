@@ -1,0 +1,10 @@
+
+
+1 sudo apt-get install bzip2 bsdiff
+2 cp /usr/bin/bsdiff /usr/bin/bspatch .
+
+3 ./bsdiff old.file new.file add.patch
+old.file是旧的文件，new.file是新更改变化的文件，add.patch是这两个文件生成的差异文件.
+
+4 ./bspatch old.file createNew.file add.patch 
+其中createNew.file是合并后生成的新文件
