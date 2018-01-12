@@ -1,3 +1,3 @@
 --send_intent=boot-recovery
---update_package=CACHE:recovery/update.zip
+--update_package=CACHE:recovery/update.zip 或者 --update_package=/data/media/0/update.zip
 --locale=zh_CN
